@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+
+<style>
+	html, body {
+		height: 99%;
+		width: 99.5%;
+		text-align: center;
+	}
+	.background {
+		height: 99.5%;
+		width: 100%;
+		text-align: center;
+	}
+	.text  {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  width: 99%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 8vmax;
+  text-align: center;
+  font-family: "Anton";	
+  white-space: pre-wrap;
+	} 
+	</style>
+</head>
+
+<body>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<a id="changeLink" target="_blank">
+<div class="background" id="changeBg">
+<div class="text" id="changeText">
+<script>
+var colors = ["#e50914",
+							"#ffffff",
+							"#0080ff",
+							"#ffffff",
+							"#3b2a8f",
+							"#ffffff",
+							"#b25313",
+							"#ffffff",
+							"#a6b1b7",
+							"#ffffff",
+							"#c32429"];
+var bgColors = ["#282828",
+								"#cc0000",
+								"#ffffff",
+								"#673769",
+								"#bc1008",
+								"#47478f",
+								"#004c40",
+								"#2d8cff",
+								"#ffffff",
+								"#c9154d",
+								"#ffffff"];
+var texts = ["UM\nGOLPE\nDE\nSORTE",
+	  				 "UM\nSINAL\nDE\nOTIMISMO",
+			 	     "PREVEJO\nUMA\nCERTA\nEUFORIA",
+			 	     "MESMO\nASSIM\nESTAMOS\nOTIMISTAS",
+			 	     "FAZIA TEMPO\nQUE NÃO\nCRESCÍAMOS\nDESSE JEITO",
+			 	     "HORA\nDE\nNOS\nFORTALECER",
+			 	     "A GENTE\nVÊ UM\nFUTURO\nINCRÍVEL",
+			 	     "UMA\nGRANDE\nOPORTUNIDADE\nPARA NÓS",
+			 	     "NÃO VEJO\nQUALQUER MOTIVO\nPARA NÃO\nSER OTIMISTA",
+			 	     "A\nPERSPECTIVA\nÉ\nBOA",
+			 	     "SUPERARAM\nNOSSAS\nEXPECTATIVAS"];	    
+var links = ["https://www.independent.co.uk/arts-entertainment/tv/news/netflix-coronavirus-reed-hastings-lucky-break-covid-stay-home-profits-a9706551.html",
+						"https://exame.com/economia/3-tendencias-definem-o-novo-normal-no-brasil-segundo-estudo-da-bain/",
+						"https://blog.flaviomarinho.com.br/otimismo-havera-euforia-no-mercado-apos-pandemia-afirma-silvio-bezerra/",
+						"https://supervarejo.com.br/materias/razoes-que-levam-ao-aumento-na-venda-de-vinhos",
+						"https://exame.com/pme/com-o-lixo-gerado-na-pandemia-esta-empresa-vai-crescer-25-em-2020/",
+						"https://exame.com/pme/uma-startup-de-viagens-fez-o-impossivel-cresceu-10-vezes-na-pandemia/",
+						"http://www.ceisebr.com/conteudo/cenario-promissor-pos-pandemia-gera-otimismo-no-setor.html",
+						"https://www.istoedinheiro.com.br/ceo-da-zoom-diz-mundo-dos-negocios-se-beneficiara-muito-apos-a-pandemia/",
+						"https://exame.com/negocios/ceo-da-apple-se-diz-otimista-sobre-perspectivas-pos-pandemia/",
+						"https://www.infomoney.com.br/economia/com-reformas-pib-pode-surpreender-diz-economista-chefe-do-bradesco/",
+						"https://www.cnnbrasil.com.br/business/2020/08/14/jbs-mantem-plano-de-investimentos-de-r-8-bilhoes-mesmo-com-a-pandemia-diz-ceo"];
+var counter = 0;
+var textElem = document.getElementById("changeText");
+var bgElem = document.getElementById("changeBg");
+var linkElem = document.getElementById("changeLink");
+var inst = setInterval(change, 2000);
+function change() {
+  textElem.innerHTML = texts[counter];
+  textElem.style.color = colors[counter];
+  bgElem.style.background = bgColors[counter];
+	linkElem.href = links[counter] 
+  counter++;
+  if (counter >= texts.length) {
+    counter = 0;
+  }
+}
+</script>
+</div></div>
+</a>
+</body>
+</html>
